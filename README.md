@@ -24,15 +24,15 @@ This study empirically demonstrates the "Clinical Sycophancy" vulnerability in f
    ```bash
    pip install -r requirements.txt
    python -m spacy download en_core_web_sm
-```
+`
 
 2. **Run the statistical analysis on the provided results:**
 
    ```bash
     python src/04_statistical_analysis.py
-```
+`
 
-Note: To run the full inference pipelines, you will need to download the Llama-3 GGUF/Safetensors models from Hugging Face, as they are excluded from this repository due to size constraints.
+**Note**:To run the full inference pipelines, you will need to download the Llama-3 GGUF/Safetensors models from Hugging Face, as they are excluded from this repository due to size constraints.
 
 
 
