@@ -13,11 +13,10 @@ This study empirically demonstrates the "Clinical Sycophancy" vulnerability in f
     *   `resultados_baseline_8b.json`: Zero-shot inference outputs for Llama-3-8B.
     *   `resultados_baseline_70b.json`: Zero-shot inference outputs for Llama-3-70B (Quantized Q4_K_M).
 *   `src/`
-    *   `01_dataset_generation.py`: Script using OpenAI API to generate the synthetic prompts.
-    *   `02_baseline_evaluation.py`: Inference pipeline using `llama_cpp` and `transformers` for local evaluation.
-    *   `03_latent_space_intervention.py`: PyTorch implementation of the RepE ablation study, using forward hooks to inject the orthogonal safety vector into intermediate layers.
-    *   `04_statistical_analysis.py`: Calculates Sycophancy Error Rates (SER) and runs McNemar's test via `statsmodels`.
-
+    *   `01_dataset_generation.py`: Script using the OpenAI API (`gpt-4o-mini`) to generate the synthetic prompts safely via environment variables.
+    *   `02_baseline_evaluation.py`: Local inference pipelines using `llama_cpp` (and/or `transformers`) to evaluate the models and flag catastrophic failures using deterministic NER.
+    *   `03_latent_space_intervention.py`: PyTorch implementation of the RepE ablation study. It uses forward hooks to inject the orthogonal safety vector into intermediate transformer layers (13 to 17) during real-time inference.
+    *   `04_statistical_analysis.py`: Unified analytical script that calculates the segmented Sycophancy Error Rates (SER) and computes McNemar's test with continuity correction via `statsmodels` to validate the scaling paradox.
 ## ⚙️ Quickstart
 
 1. **Clone the repository:**
