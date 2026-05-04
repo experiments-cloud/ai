@@ -1,0 +1,8 @@
+openai>=1.14.0
+huggingface_hub
+llama-cpp-python
+tqdm
+torch
+transformers
+spacy
+statsmodels
