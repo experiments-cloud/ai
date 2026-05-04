@@ -3,8 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-This repository contains the dataset and codebase for the paper **"[Insert your paper title here]"**, submitted to *Applied Intelligence*. 
-
 This study empirically demonstrates the "Clinical Sycophancy" vulnerability in foundation models (Llama-3-8B and Llama-3-70B), where emotional manipulation (e.g., aggressive tone, panic) causes models to override their safety alignment and prescribe contraindicated, potentially lethal drug combinations (e.g., Warfarin + Ibuprofen). We also provide the code for our white-box mitigation strategy using Representation Engineering (RepE) via latent space intervention.
 
 ## 📂 Repository Structure
